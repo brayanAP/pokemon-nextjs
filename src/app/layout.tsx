@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
-import Providers from "./providers";
-import Head from "./head";
+import RootProviders from "./providers";
+import HeadCssBaseline from "./headCssBaseline";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,9 +15,9 @@ type Props = {
 
 const RootLayout: React.FC<Props> = ({ children }) => (
   <html lang="en">
-    <Head />
+    <HeadCssBaseline />
     <body className={inter.className}>
-      <Providers>{children}</Providers>
+      <RootProviders>{children}</RootProviders>
     </body>
   </html>
 );

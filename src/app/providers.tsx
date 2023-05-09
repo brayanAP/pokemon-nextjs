@@ -5,8 +5,8 @@ type Props = {
   children: React.ReactNode;
 };
 
-const Providers: React.FC<Props> = ({ children }) => (
+const RootProviders: React.FC<Props> = ({ children }) => (
   <NextUIProvider>{children}</NextUIProvider>
 );
 
-export default Providers;
+export default RootProviders;
